@@ -6,6 +6,8 @@ import nikeclone from '../assets/projects/nikeclone.jpg';
 import empmang from '../assets/projects/empmanagement.jpg';
 import ttt from '../assets/projects/Tictactoeapp.jpg';
 import heartdisease from '../assets/projects/heartdisease.jpg';
+import weather from '../assets/projects/weather.png';
+import todolist from '../assets/projects/todolist.png';
 
 const Work = () => {
   return (
@@ -81,7 +83,35 @@ const Work = () => {
             </div>
           </div>
 
-          
+          {/* Grid Item 5 */}
+          <div style={{ backgroundImage: `url(${weather})` }} className="shadow-lg shadow-[#040c16] group container flex justify-center items-center mx-auto rounded-md content-div">
+            {/* Hover effect */}
+            <div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-xl font-bold text-white tracking-wider'>
+                Weather application which fetches data from Openweather API
+              </span>
+              <div className='pt-8 text-center'>
+                <a href="https://github.com/madalavt/WeatherApp">
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold'>Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid Item 6 */}
+          <div style={{ backgroundImage: `url(${todolist})` }} className="shadow-lg shadow-[#040c16] group container flex justify-center items-center mx-auto rounded-md content-div">
+            {/* Hover effect */}
+            <div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-xl font-bold text-white tracking-wider'>
+                Todo list application using react and tailwind 
+              </span>
+              <div className='pt-8 text-center'>
+                <a href="https://github.com/madalavt/todolist">
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold'>Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
